@@ -1,0 +1,182 @@
+/* REQUIRED LAYOUT */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #f8fbff;
+    color: #333;
+    line-height: 1.6;
+    max-width:  1320px;
+}
+
+nav {
+    background: #385c9e;
+    padding: 15px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    height: fit-content;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white !important;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 8px 20px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    background: #81d4fa;
+    color: #003087 !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+h1, h2 {
+    color: #000000;
+    margin-top: 100px;
+    text-align: center;
+}
+
+/*  TABLE STYLING  */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #003087;
+    padding: 14px 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background: #003087;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background: #f8fbff;
+}
+
+/* Nested table inside patients page */
+table table {
+    background: #e6f0ff;
+    border-radius: 6px;
+    margin: 6px 0;
+}
+
+/*  FEATURES SECTION (Homepage cards) */
+.features {
+    display: flex;
+    gap: 30px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.features div {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.features img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* FOOTER  */
+footer {
+    background: #385c9e;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+footer a:hover {
+    background: #b7e2f7;
+    color: #000000;
+}
+
+/*  GALLERY & SLIDER  */
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.gallery-grid a img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border: 4px solid #003087;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+.gallery-grid a img:hover { 
+    transform: scale(1.08); 
+    border-color: #00aaff; 
+}
+
+.slider { 
+    position: relative; 
+    height: 800px;
+    width: 1320px; 
+    overflow: hidden; 
+    border-radius: 12px; 
+    margin-top: 50px; 
+}
+.slide { 
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    display: none; 
+    object-fit: cover; 
+}
+.slide.active { display: block; }
+
+.about_us-img {
+    width: 1000px;
+    margin: auto;
+}

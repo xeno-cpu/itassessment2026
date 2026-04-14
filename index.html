@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HMIS - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="patients.html">Patients</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h1>Health Management Information System (HMIS)</h1>
+    
+    <!-- LOCAL HEALTH SLIDER -->
+    <div class="slider">
+        <img class="slide active" src="https://shmsolutions.in/blog/wp-content/uploads/2025/06/Healthcare-professionals-collaborating-in-a-well-lit-hospital-corridor-emphasizing-teamwork-and-patient-care.jpg" alt="HMIS Hospital Management Dashboard">
+        <img class="slide" src="https://acropolium.com/img/articles/healthcare-management-system-development/img01.jpg" alt="Real-time Patient Records">
+        <img class="slide" src="https://bloodhospital.org.np/uploads/medium/dsc01618-1-69c628e8394f8.jpg" alt="Healthcare Analytics in Nepal">
+    </div>
+
+    <script>
+        let slides = document.querySelectorAll('.slide');
+        let i = 0;
+        setInterval(() => {
+            slides[i].classList.remove('active');
+            i = (i + 1) % slides.length;
+            slides[i].classList.add('active');
+        }, 4000);
+    </script>
+
+    <p style="text-align:center; font-size:1.2em; color:#003087;">
+        Real-time patient management • Secure records • Smart analytics for hospitals in Nepal
+    </p>
+
+    <div class="features">
+        <div>
+            <img src="https://t4.ftcdn.net/jpg/06/33/37/31/360_F_633373121_OoIiIFCExhCTdJB7pXxoOr74dsJrgIqt.jpg" alt="Patient registration at hospital" style="height:220px;">
+            <h3>Patient Registration</h3>
+            <p>Instant digital entry with secure HMIS records.</p>
+        </div>
+        <div>
+            <img src="https://gh.bmj.com/content/bmjgh/6/8/e006216/F1.large.jpg" alt="HMIS data analytics dashboard" style="height:220px;">
+            <h3>Live Analytics</h3>
+            <p>Real-time hospital statistics and reporting.</p>
+        </div>
+        <div>
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/a5e6bc133609243.61c1b8414b12a.png" alt="Doctor reviewing patient history" style="height:220px;">
+            <h3>Doctor Dashboard</h3>
+            <p>Complete patient history from any device.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>HMIS - Health Management Information System</strong></p>
+        <p>The British College, Kathmandu, Nepal | 
+           <a href="mailto:xeno@hmis.edu.np">xeno@hmis.edu.np</a></p>
+        <p>&copy; 2026 Xeno. All Rights Reserved.</p>
+        <p style="margin-top:15px;">
+            <a href="index.html">Home</a> | 
+            <a href="about.html">About</a> | 
+            <a href="patients.html">Patients</a> | 
+            <a href="gallery.html">Gallery</a> | 
+            <a href="contact.html">Contact</a> | 
+            <a href="https://www.who.int/" target="_blank">WHO</a>
+        </p>
+    </footer>
+</body>
+</html>
