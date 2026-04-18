@@ -14,11 +14,12 @@ nav {
     padding: 15px 0;
     position: absolute;
     top: 0;
-    left: 0;
-    right: 0;
     z-index: 100;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     height: fit-content;
+    max-width: 1320px;
+    margin: auto;
+    width: 100%;
 }
 
 nav ul {
@@ -121,8 +122,9 @@ footer {
     padding: 30px;
     margin-top: 60px;
     position: absolute;
-    left: 0;
-    right: 0;
+    max-width: 1320px;
+    /* margin: auto; */
+    width: 100%;
 
 }
 
@@ -176,11 +178,13 @@ footer a:hover {
 /* GRID */
 .gallery-container {
   display: grid;
-  grid-template-columns: repeat(4, 390px);
-  margin: -235px;
+  grid-template-columns: repeat(4, auto);
+  /* margin: auto;   */
   margin-top: 10px;
   gap: 50px;
   padding: 10px;
+  max-width: 1320px;
+
 }
 
 /* ITEM */
